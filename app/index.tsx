@@ -17,7 +17,7 @@ function Home({}: Props) {
     <View style={styles.container}>
       <Text style={styles.text}>Home</Text>
       <Button
-        title="הוסף לקוח דדמה"
+        title="הוסף לקוח דsדמה"
         onPress={() =>
           addNewClient({
             name: "אורי גיא",
