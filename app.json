@@ -2,9 +2,10 @@
   "expo": {
     "name": "flowify",
     "slug": "flowify",
-    "scheme": "Flowify",
+    "scheme": ["flowify"],
     "version": "1.0.0",
     "orientation": "portrait",
+    "platforms": ["ios", "android"],
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
@@ -24,7 +25,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.origuystudio.flowify"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -34,8 +36,7 @@
         "projectId": "a9c20c9a-f089-420c-92a2-26ab73683139"
       }
     },
-    "plugins": [
-      "expo-router"
-    ]
+    "plugins": ["expo-router"],
+    "owner": "origuystudio"
   }
 }

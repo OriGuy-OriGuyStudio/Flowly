@@ -9,39 +9,14 @@ import {
   updateClient,
 } from "../src/services/firestoreService"
 import { Client } from "../src/types/firestoreSchemas"
+import AuthScreen from "../src/screens/auth/AuthScreen"
 
 interface Props {}
 
 function Home({}: Props) {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Home</Text>
-      <Button
-        title="הוסף לקוח דsדמה"
-        onPress={() =>
-          addNewClient({
-            name: "אורי גיא",
-            email: "origuy@test.com",
-            phone: "054-1234567",
-          })
-        }
-      />
-      <Button
-        title="עדכן לקוח דמה"
-        onPress={() =>
-          updateClient("8UCTC6xzwu3jyzDOYiZk", {
-            email: "origuy@studio.com",
-          })
-        }
-      />
-      <Button
-        title="מחק לקוח דמה"
-        onPress={() => deleteClient("rXiJrgmfdSZ41h1UZB3S")}
-      />
-      <Button
-        title="קבל לקוח"
-        onPress={() => getClientById("8UCTC6zwu3jyzDOYiZk")}
-      />
+      <AuthScreen />
 
       <StatusBar style="auto" />
     </View>
