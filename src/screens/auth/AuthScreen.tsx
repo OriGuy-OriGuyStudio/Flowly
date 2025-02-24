@@ -6,7 +6,7 @@ interface Props {}
 function AuthScreen({}: Props) {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>AuthScreen</Text>
+      <Text className="text-7xl">AuthScreen</Text>
     </View>
   )
 }
