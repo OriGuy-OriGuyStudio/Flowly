@@ -10,13 +10,14 @@ import {
 } from "../src/services/firestoreService"
 import { Client } from "../src/types/firestoreSchemas"
 import AuthScreen from "../src/screens/auth/AuthScreen"
-
+import "../global.css"
+import LogininScreen from "../src/screens/auth/LogininScreen"
 interface Props {}
 
 function Home({}: Props) {
   return (
     <View style={styles.container}>
-      <AuthScreen />
+      <LogininScreen />
 
       <StatusBar style="auto" />
     </View>
@@ -28,13 +29,9 @@ export default Home
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    width: "100%",
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#fff",
-  },
-  text: {
-    fontSize: 20,
-    color: "#000",
-    fontWeight: "bold",
   },
 })

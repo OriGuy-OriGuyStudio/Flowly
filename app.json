@@ -4,7 +4,7 @@
     "slug": "flowify",
     "scheme": ["flowify"],
     "web": {
-      "bundler": "metro"
+      "favicon": "./assets/favicon.png"
     },
     "version": "1.0.0",
     "orientation": "portrait",
@@ -31,15 +31,26 @@
       },
       "package": "com.origuystudio.flowify"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
     "extra": {
       "eas": {
         "projectId": "a9c20c9a-f089-420c-92a2-26ab73683139"
       }
     },
-    "plugins": ["expo-router"],
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Rubik-Regular.ttf",
+            "./assets/fonts/Rubik-Medium.ttf",
+            "./assets/fonts/Rubik-Bold.ttf",
+            "./assets/fonts/Rubik-black.ttf"
+          ]
+        }
+      ]
+    ],
     "owner": "origuystudio"
   }
 }
