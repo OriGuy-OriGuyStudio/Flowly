@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "855699430641",
+    "project_id": "flowify-d8284",
+    "storage_bucket": "flowify-d8284.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855699430641:android:2665b928be99338f769d50",
+        "android_client_info": {
+          "package_name": "OriGuy.Studio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvak-yvtkGfSmHSgYiS6ToJ4vnuGOYfkw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

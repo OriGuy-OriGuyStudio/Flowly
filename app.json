@@ -29,7 +29,8 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.origuystudio.flowify"
+      "package": "com.origuystudio.flowify",
+      "googleServicesFile": "./android/app/google-services.json"
     },
     "extra": {
       "eas": {
@@ -39,6 +40,8 @@
     "plugins": [
       "expo-router",
       "expo-font",
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth",
       [
         "expo-font",
         {

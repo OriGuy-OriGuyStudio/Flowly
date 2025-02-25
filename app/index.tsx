@@ -1,17 +1,8 @@
 import { StatusBar } from "expo-status-bar"
-import React, { useEffect, useState } from "react"
-import { Button, FlatList, StyleSheet, Text, View } from "react-native"
-import {
-  addNewClient,
-  deleteClient,
-  getClientById,
-  getClients,
-  updateClient,
-} from "../src/services/firestoreService"
-import { Client } from "../src/types/firestoreSchemas"
-import AuthScreen from "../src/screens/auth/AuthScreen"
-import "../global.css"
+import React from "react"
+import { StyleSheet, View } from "react-native"
 import LogininScreen from "../src/screens/auth/LogininScreen"
+import "../global.css"
 interface Props {}
 
 function Home({}: Props) {

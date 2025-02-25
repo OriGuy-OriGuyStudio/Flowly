@@ -5,6 +5,7 @@ import { StyleSheet, Text, View } from "react-native"
 import { useFonts } from "expo-font"
 import * as SplashScreen from "expo-splash-screen"
 import "../global.css"
+import { AuthProvider } from "../src/context/AuthContext"
 interface Props {}
 SplashScreen.preventAutoHideAsync()
 function Layout({}: Props) {
@@ -24,7 +25,7 @@ function Layout({}: Props) {
     return null
   }
   return (
-    
+    <AuthProvider>
       <Stack
         screenOptions={{
           headerShown: true,
@@ -41,7 +42,7 @@ function Layout({}: Props) {
           },
         }}
       ></Stack>
-    
+    </AuthProvider>
   )
 }
 
